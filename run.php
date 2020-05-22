@@ -1,5 +1,5 @@
 <?php  
-// Created by yudha tira pamungkas
+// Created by viole ren
 function post($url = null, $data = null, $headers = null) {
 	$ch = curl_init($url);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -61,7 +61,7 @@ function create_iflix() {
 	$register = post('https://www.iflix.com/api/identity/v4/register', '{"deviceId":"543509e6-c07b-4d32-9ed2-cd71ce5be817-ixdj","deviceName":"Win32","name":"'.$name[1].'","email":"'.$email[1].'","password":"yudhagans"}', $headers);
 
 	if (strripos($register, '"account"')) {
-		echo $data = "[+] Success create account | ".$email[1]." | yudhagans\n\r";
+		echo $data = "[+] Success create account | ".$email[1]." | rengans\n\r";
 		$fh = fopen("result_iflix.txt", "a");
         fwrite($fh, $data);
         fclose($fh);
@@ -73,7 +73,7 @@ function create_iflix() {
 
 
 echo "Iflix Account Creator\n";
-echo "Created by https://www.facebook.com/yudha.t.pamungkas.3\n";
+echo "Created by https://www.facebook.com/vinz.akinari\n";
 echo "How many u want to create? ";
 $banyak = trim(fgets(STDIN));
 for ($i = 0; $i < $banyak ; $i++) {
