@@ -73,7 +73,7 @@ function create_iflix() {
 
 
 echo "Iflix Account Creator\n";
-echo "Created by https://www.facebook.com/vinz.akinari\n";
+echo "Created by https://www.instagram.com/vyrn.vu\n";
 echo "How many u want to create? ";
 $banyak = trim(fgets(STDIN));
 for ($i = 0; $i < $banyak ; $i++) {
